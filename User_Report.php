@@ -61,15 +61,19 @@
         .edit-btn {
             margin-right: 5px;
         }
+
+        .delete-btn {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
     <div id="sidebar">
-        <a href="home.php"><i class="fas fa-home"></i>Home</a>
+        <a href="homepage.php"><i class="fas fa-home"></i>Home</a>
         <a href="User_Report.php"><i class="fas fa-book"></i>Users Reports</a>
         <a href="Recipe_Report.php"><i class="fas fa-info-circle"></i> Recipes Report</a>
-        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+       
+        <a href="homepage.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </div>
 
     <div id="content">
@@ -118,6 +122,7 @@
                         echo "<td>" . $row['Email'] . "</td>";
                         echo "<td>
                                 <a href='edit_user.php?id=" . $row['id'] . "' class='btn btn-primary edit-btn'>Edit User</a>
+                                <a href='delete_user.php?id=" . $row['id'] . "' class='btn btn-danger delete-btn'>Delete User</a>
                             </td>";
                         echo "</tr>";
                     }
