@@ -159,7 +159,7 @@
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="UserLoginPage.php">Login</a></li>
-    <li><a href="AdminPage.php">Admin</a></li>
+    <li><a href="AdminLogins.php">Admin</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
 </div>
